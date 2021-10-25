@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;;
+}
+:root{
+    --gray-color: #777777;
+    --dark-gray-color: #616161;
+    --light-gray-color: #CCCCCC;
+}
+.header{
+    background:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url(../Images/front_image.jpg) no-repeat center/cover;
+    height: 60vh;
+    /* opacity: 0.75; */
+}
+.navbar{
+    z-index: 100;
+}
+.nav-text{
+    color: var(--gray-color);
+}
+.nav-text:hover{
+    background-color: var(--light-gray-color);
+    color: var(--dark-gray-color)
+}
+.nav-search:hover{
+    color: white;
+    background-color: red;
+}
+
+/* navbar ends  */
+/* front section starts */
+
+.front-section{
+    height: 100%;
+    width: 100%;
+}
+.front-text{
+    background-color: black;
+    letter-spacing: 0.8rem;
+    z-index: 50;
+}
+/* front section ends  */
+
+/* about section starts  */
+
+.about-section{
+    padding-top: 5rem;
+    color: var(--gray-color);
+    z-index: 90;
+}
+.para-headline{
+    font-style: italic;
+}
+.profile-image{
+    opacity: 0.7;
+}
+.profile-image:hover{
+    opacity: 1;
+}
+/* about section ends  */
+
+/* progress part starts */
+
+.tagline{
+    letter-spacing: 0.8rem;
+}
+.pbar{
+    background-color: var(--dark-gray-color) !important;
+}
+/* progress part ends  */
+/* info section starts  */
+
+.info-section{
+    background-color: var(--dark-gray-color)!important;
+    z-index: 90;
+}
+
+/* info section ends  */
+
+/* portfolio part starts  */
+
+.profile-section{
+    z-index: 90;
+}
+.portfolio-image{
+    height: 60vh;
+    background: url(../Images/portfolio_image.jpg) center/cover no-repeat;
+}
+.portfolio-text{
+    letter-spacing: 0.8rem;
+}
+.gallery:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/* portfolio part ends  */
