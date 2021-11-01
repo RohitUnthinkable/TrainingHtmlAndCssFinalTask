@@ -10,11 +10,12 @@
     --light-gray-color: #CCCCCC;
     --ultra-light-gray-color: #dfd0d0;
 }
+/* header starts */
 .header{
     background:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), url(../Images/front_image.jpg) no-repeat center/cover;
     height: 60vh;
-    /* opacity: 0.75; */
 }
+/* navbar starts */
 .navbar{
     z-index: 100;
 }
@@ -29,8 +30,23 @@
     color: white;
     background-color: red;
 }
+.search-text{
+    display: none;
+}
+.nav-toggle-bar{
+    color: var(--gray-color);
+    display: none;
+}
+.navbar-toggler{
+    border: none!important;
+}
+.navbar-toggler:hover{
+    background-color: black;
+    color: white!important;
+}
 
 /* navbar ends  */
+
 /* front section starts */
 
 .front-section{
@@ -38,11 +54,13 @@
     width: 100%;
 }
 .front-text{
-    background-color: black;
+    background:linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.3)), black;
     letter-spacing: 0.8rem;
-    z-index: 50;
 }
 /* front section ends  */
+
+/* header ends  */
+
 
 /* about section starts  */
 
@@ -71,6 +89,8 @@
     background-color: var(--dark-gray-color) !important;
 }
 /* progress part ends  */
+
+
 /* info section starts  */
 
 .info-section{
@@ -79,6 +99,7 @@
 }
 
 /* info section ends  */
+
 
 /* portfolio part starts  */
 
@@ -105,11 +126,15 @@
 .portfolio-text{
     letter-spacing: 0.8rem;
 }
+
 /* mywork section starts  */
 
 .gallery:hover{
     opacity: 0.7;
     cursor: pointer;
+}
+.my-work{
+    padding-top: 6rem;
 }
 .my-work button{
     background-color: var(--ultra-light-gray-color);
@@ -118,9 +143,13 @@
 .my-work button:hover{
     background-color: var(--light-gray-color);
 }
+
 /* mywork section ends  */
+
 /* portfolio part ends  */
 
+
+/* contact part starts  */
 .contact-section{
     z-index: 90;
     position: relative;
@@ -153,12 +182,20 @@
     color: white;
 }
 
+/* contact part ends  */
+
+
+/* footer part starts  */
 .footer{
     background-color: var(--dark-gray-color);
     padding: 3rem 0rem;
 }
 .footer:hover{
     background-color: black;
+    color: black;
+}
+.footer:hover .top{
+    color: black;
 }
 .top{
     color: var(--dark-gray-color);
@@ -173,6 +210,41 @@
     font-size: 1.5rem;
 }
 .footer-icons i:hover{
-    color: var(--light-gray-color);
+    color: var(--gray-color);
     cursor: pointer;
+}
+
+/* footer ends  */
+
+
+
+/* media queries  */
+
+/* for tablets  */
+
+
+
+/* for mobile device */
+@media(max-width:575px){
+    .nav-toggle-bar{
+        display: inline-block;
+    }
+    .collapse{
+        background-color: white!important;
+    }
+    .nav-icons{
+        display: none!important;
+    }
+    .search{
+        display: none;
+    }
+    .search-text{
+        display: block;
+    }
+    .nav-text{
+        color: black!important;
+    }
+    .front-text-web{
+        display: none;
+    }
 }

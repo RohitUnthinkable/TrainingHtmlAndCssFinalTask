@@ -29,32 +29,38 @@
     <!-- header starts -->
     <header class="header" id="home">
         <!-- navbar starts -->
-        <nav class="navbar navbar-expand-lg navbar-light m-0 p-0 position-fixed w-100" id="nav-bar">
+        <nav class="navbar navbar-expand-sm navbar-light m-0 p-0 position-fixed w-100" id="nav-bar">
             <a class="nav-link nav-text px-3 py-3" href="#"><strong>HOME</strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-toggler py-3 px-4 nav-toggle-bar" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link nav-text px-3 py-3" href="#"><strong><i
-                                    class="fa fa-user px-1"></i>ABOUT</strong></a>
+                        <a class="nav-link nav-text px-3 py-3" href="#about"><strong><i
+                                    class="fa fa-user px-1 nav-icons"></i>ABOUT</strong></a>
                     </li>
                     <li class="nav-item nav-text">
-                        <a class="nav-link nav-text px-3 py-3" href="#"><strong><i
-                                    class="fa fa-th px-1"></i>PORTFOLIO</strong></a>
+                        <a class="nav-link nav-text px-3 py-3" href="#my-work-id"><strong><i
+                                    class="fa fa-th px-1 nav-icons"></i>PORTFOLIO</strong></a>
                     </li>
                     <li class="nav-item nav-text">
-                        <a class="nav-link nav-text px-3 py-3" href="#"><strong><i
-                                    class="fa fa-envelope px-1"></i>CONTACT</strong></a>
+                        <a class="nav-link nav-text px-3 py-3" href="#where-i-work"><strong><i
+                                    class="fa fa-envelope px-1 nav-icons"></i>CONTACT</strong></a>
+                    </li>
+                    <li class="nav-item nav-text search-text">
+                        <a href="#" class="nav-link nav-text px-3 py-3" style="text-decoration: none;"><strong>SEARCH</strong></a>
                     </li>
                 </ul>
                 <div class="search">
                     <a href="#" style="color: var(--gray-color);"><i class="fa fa-search nav-search p-3"
                             style="font-size:1.5rem"></i></a>
                 </div>
+                <!-- <div class="search-text-div">
+                    <a href="#" class="nav-text px-3 py-3" style="text-decoration: none;"><strong>SEARCH</strong></a>
+                </div> -->
             </div>
         </nav>
         <!-- navbar ends -->
@@ -65,7 +71,7 @@
             <div class="container h-100 d-flex justify-content-center align-items-center">
                 <div class="row">
                     <div class="col-12">
-                        <h4 class="front-text d-inline-block text-white p-3 "><strong>MY WEBSITE LOGO</strong></h4>
+                        <h4 class="front-text d-inline-block text-white p-3 "><strong>MY <span class="front-text-web">WEBSITE</span> LOGO</strong></h4>
                     </div>
                 </div>
             </div>
@@ -99,7 +105,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <p class="mt-0">
+                    <p class="mt-lg-0 mt-m-0 mt-sm-4 mt-4">
                         Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
@@ -176,7 +182,7 @@
                 <strong>PORTFOLIO</strong>
             </h2>
         </div>
-        <div class="container d-flex flex-column justify-content-center align-items-center my-work pt-5" id="my-work">
+        <div class="container d-flex flex-column justify-content-center align-items-center my-work" id="my-work-id">
             <h3><strong>MY WORK</strong></h3>
             <p class="para-headline pt-4">Here are some of my latest lorem work ipsum tipsum</p>
             <p class="para-headline">Click on the images to make them bigger</p>
@@ -220,14 +226,14 @@
                 <strong>CONTACT</strong>
             </h2>
         </div>
-        <div class="container d-flex flex-column justify-content-center align-items-center my-work pt-5" id="my-work">
+        <div class="container d-flex flex-column justify-content-center align-items-center my-work" id="where-i-work">
             <h3><strong>WHERE I WORK</strong></h3>
             <p class="para-headline pt-4">I'd love your feedback!</p>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <img src="Images/map_image.jpg" alt="" class="w-100">
                 </div>
-                <div class="col-lg-8 col-md-8 col-sm-12">
+                <div class="col-lg-8 col-md-8 col-sm-12 mt-lg-0 mt-m-0 mt-sm-4 mt-4">
                     <div class="work-contact">
                         <p><strong><i class="fa fa-map-marker mr-4"></i>Chicago, US</strong></p>
                         <p><strong><i class="fa fa-phone mr-4"></i>Phone: +00 151515</strong></p>
@@ -237,13 +243,13 @@
                     <form action="" class="py-4">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <input class="w-100 py-2 px-1" type="text" name="name" placeholder="Name">
+                                <input class="w-100 py-2 px-1" type="text" name="name" placeholder="Name" required>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <input class="w-100 py-2 px-1" type="email" name="email" placeholder="Email">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mt-lg-0 mt-m-0 mt-sm-2 mt-2">
+                                <input class="w-100 py-2 px-1" type="email" name="email" placeholder="Email" required>
                             </div>
                         </div>
-                        <input class="w-100 my-2 py-2 px-1" type="text" name="message" placeholder="Message">
+                        <input class="w-100 my-2 py-2 px-1" type="text" name="message" placeholder="Message" required>
                         <div class="message-btn d-flex w-100 mt-2 justify-content-end">
                             <button class="btn">
                                 <strong><i class="fa fa-telegram px-2"></i>SEND MESSAGE</strong>
@@ -258,6 +264,7 @@
 
     <!-- contact section ends  -->
 
+    <!-- footer starts  -->
     <footer class="footer">
         <div class="container text-white d-flex flex-column justify-content-center align-items-center">
             <span class="top">
@@ -273,7 +280,7 @@
             <p>Powered by Rohit Sharma</p>
         </div>
     </footer>
-
+    <!-- footer ends  -->
 
     <!-- ------------------------------ Bootstrap Javascript code------------------------ -->
 
@@ -302,9 +309,11 @@
             var navbar = document.getElementById("nav-bar");
             if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
                 navbar.style.backgroundColor = "#ffffff";
+                navbar.style.boxShadow = "0px 0.2px 6px black";
             }
             else {
                 navbar.style.backgroundColor = "rgba(0,0,0,0)";
+                navbar.style.boxShadow = "none";
             }
         }
     </script>
